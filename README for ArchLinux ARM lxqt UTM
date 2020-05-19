@@ -1,8 +1,7 @@
 THIS REQUIRES THAT YOUR IDEVICE BE JAILBROKEN.
 It may, for all I know, be possible without that, but I don't have any knowledge or experience of how.
 
-
-Unzip the file. It contains a .utm file. Add that to your UTM virtual machines.
+Unzip the file, which is in releases. It contains a .utm file. Add that to your UTM virtual machines.
 You will need a terminal app that permits more then one tab to be open and a vnc app. The instructions here are tested on NewTerm and Screens. Those are not recommendations, just what I happen to use.
 
 These instructions are for use with the default user, alarm. They will work, suitably modified, for any user *that is a member of the wheel group.* (The machine is set up so that members of the wheel group can sudo without authentication.)
