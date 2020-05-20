@@ -16,7 +16,7 @@ Start the virtual machine.
 Start the terminal as a "Slide Over" app.
 Enter the command
     ssh -p 5555 alarm@127.0.0.1
-Note. Sometimes UTM doesn't release the keyboard to the terminal. If that happens, just start a second terminal tab and switch to it and back.
+Note: Sometimes UTM doesn't release the keyboard to the terminal. If that happens, just start a second terminal tab and switch to it and back.
 You will be asked for the alarm password. Enter it. (The default password is "alarm".)
 You are now logged in to the virtual machine. Enter the command
     startgui
@@ -24,5 +24,7 @@ There will be various error messages. Don't pay them any mind.
 In a _new_ terminal tab,  enter the command
     ssh -f -N -T -L 5910:localhost:5900 alarm@127.0.0.1 -p 5555
 Now slide the terminal window out of view, and launch your vnc viewer in split view. Launch it, configured as described above, and Bob's your uncle.
+
+After running this, the keyboard in UTM will not work any more. Shutting down the gui disconnects it from the viewer, but does not actually shut down the virtual machine. You can power the virtual machine off in the (first) terminal by running "sudo poweroff".
 
 Enjoy!
