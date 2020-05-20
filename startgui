@@ -1,4 +1,5 @@
 #!/bin/bash
+# /usr/local/bin/startgui
 # Based on github.com/sakaki-/gentoo-on-rpi-64bit/wiki/Adding-a-GUI-to-your-QEMU-KVM--Guest-OS
 sudo rm /tmp/.X1-lock
 sudo pkill X
