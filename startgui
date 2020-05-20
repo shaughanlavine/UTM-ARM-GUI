@@ -1,0 +1,9 @@
+#!/bin/bash
+# Based on github.com/sakaki-/gentoo-on-rpi-64bit/wiki/Adding-a-GUI-to-your-QEMU-KVM--Guest-OS
+sudo rm /tmp/.X1-lock
+sudo pkill X
+# DISPLAY is set to :1 by /etc/profile.d/display.sh
+# export DISPLAY=:1
+Xvfb $DISPLAY -screen 0 1280x1024x16 &
+startlxqt &>/dev/null&
+x11vnc -display $DISPLAY -bg -nopw -listen localhost -xkb &>/dev/null&
